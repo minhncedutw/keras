@@ -3,14 +3,16 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - hdf5
   - pip=18.0
   - python=3.6
+  - pylab
+  - python-graphviz
   - pip:
     - graphviz
     - h5py
     - keras
     - numpy
     - pydot
-    - pylab
     - tensorflow-gpu
 
