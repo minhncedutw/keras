@@ -6,7 +6,9 @@ generated movie which contains moving squares.
 import os
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = "14"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+from keras import backend as K
+print(K.tensorflow_backend._get_available_gpus())
 
 from keras.models import Sequential
 from keras.layers.convolutional import Conv3D
