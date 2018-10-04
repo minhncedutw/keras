@@ -11,5 +11,6 @@ dependencies:
     - keras
     - numpy
     - pydot
+    - pylab
     - tensorflow-gpu
 
