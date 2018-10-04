@@ -3,6 +3,11 @@
 This network is used to predict the next frame of an artificially
 generated movie which contains moving squares.
 """
+import os
+
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+os.environ["CUDA_VISIBLE_DEVICES"] = "14"
+
 from keras.models import Sequential
 from keras.layers.convolutional import Conv3D
 from keras.layers.convolutional_recurrent import ConvLSTM2D
