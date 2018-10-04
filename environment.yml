@@ -1,4 +1,4 @@
-name: dopamine_rl
+name: keras
 channels:
   - conda-forge
   - defaults
