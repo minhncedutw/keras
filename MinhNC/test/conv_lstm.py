@@ -100,6 +100,13 @@ def generate_movies(n_samples=1200, n_frames=15):
 
 # Train the network
 noisy_movies, shifted_movies = generate_movies(n_samples=1200)
+## Display train data
+# import matplotlib.cm as cm
+print('Data shape: ', noisy_movies.shape, ' ', shifted_movies.shape)
+# for i in range(shifted_movies.shape[1]):
+#     plt.imshow(X=shifted_movies[0, i, :, :, 0], cmap=cm.gray)
+#     plt.show()
+
 seq.fit(noisy_movies[:1000], shifted_movies[:1000], batch_size=10,
         epochs=300, validation_split=0.05)
 
