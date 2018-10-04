@@ -15,5 +15,5 @@ dependencies:
   - scipy
   - pip:
     - keras
-    - tensorflow-gpu
+    - tf-nightly-gpu
 
