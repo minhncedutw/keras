@@ -115,7 +115,7 @@ print('Data shape: ', noisy_movies.shape, ' ', shifted_movies.shape)
 #     plt.show()
 
 seq.fit(noisy_movies[:1000], shifted_movies[:1000], batch_size=10,
-        epochs=300, validation_split=0.05)
+        epochs=30, validation_split=0.05)
 
 # Testing the network on one movie
 # feed it with the first 7 positions and then
